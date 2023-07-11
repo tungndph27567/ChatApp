@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10sp"
+    android:padding="8sp">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/img_profile"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:background="@drawable/bg_image"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/tv_receivedMessage"
+        app:riv_oval="true" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_received_message"
+        android:id="@+id/tv_receivedMessage"
+        app:layout_constraintStart_toEndOf="@id/img_profile"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.75"
+        android:layout_marginLeft="8sp"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:paddingStart="14sp"
+        android:paddingTop="10sp"
+        android:paddingEnd="14sp"
+        android:paddingBottom="10sp"
+        app:layout_constraintWidth_max="wrap"
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_dateTime"
+        android:layout_marginTop="6sp"
+        android:textColor="@color/secondary_text"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/tv_receivedMessage"
+        app:layout_constraintTop_toBottomOf="@id/tv_receivedMessage"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

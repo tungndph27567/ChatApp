@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:overScrollMode="never"
+    android:padding="24sp"
+    android:scrollbars="none"
+    tools:context=".activities.LogInActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40sp"
+            android:text="Welcome Back"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:text="Login to continue"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/ed_email"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/bg_input"
+            android:hint="Email"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/primary_text"
+            android:paddingStart="16sp"
+            android:paddingEnd="16sp"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/ed_passwd"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_input"
+            android:hint="Password"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/primary_text"
+            android:paddingStart="16sp"
+            android:paddingEnd="16sp"
+            android:textSize="16sp" />
+
+       <FrameLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:animateLayoutChanges="true">
+           <ProgressBar
+               android:id="@+id/progressbar"
+               android:layout_width="30sp"
+               android:layout_height="30sp"
+               android:visibility="invisible"
+               android:layout_gravity="center"
+               />
+           <Button
+               android:id="@+id/btn_login"
+               android:layout_width="match_parent"
+               android:layout_height="50sp"
+               android:layout_marginTop="20sp"
+               android:text="SIGN IN"
+               android:textStyle="bold"
+               />
+       </FrameLayout>
+        <TextView
+            android:id="@+id/tv_createAcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25sp"
+            android:text="Create New Acount"
+            android:textColor="@color/primary"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>
